@@ -45,7 +45,8 @@ app.post('/submit', async (req, res) => {
     }
 });
 
+const IP = '127.0.0.1';
 const PORT = 4445;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+app.listen(PORT, IP, () => {
+    console.log(`Example app listening on port ${PORT}`)
+})
